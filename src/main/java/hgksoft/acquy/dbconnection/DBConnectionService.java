@@ -42,7 +42,7 @@ public class DBConnectionService {
                     + ":" + "3306"
                     + "/" + "acquygiakhangdb?useUnicode=true&characterEncoding=UTF-8"
                     + "&user=" + "root"
-                    + "&password=" + "hgkmysql"
+                    + "&password=" + "root"
                     + "&autoReconnect=true"
                     + "&connectTimeout=300";
 
