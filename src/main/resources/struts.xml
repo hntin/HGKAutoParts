@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<!-- Configuration for the default package. -->
+
+	<!-- ADMIN -->
+	<package name="default" extends="struts-default">
+		<!-- QUANTRI & NGUOIDUNG -->
+		<action name="QuanTri"
+			class="hgksoft.acquy.admin.actions.nguoidung.GoDangNhapActionSupport">
+			<result name="success">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="Quantri"
+			class="hgksoft.acquy.admin.actions.nguoidung.GoDangNhapActionSupport">
+			<result name="success">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="quantri"
+			class="hgksoft.acquy.admin.actions.nguoidung.GoDangNhapActionSupport">
+			<result name="success">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="DangNhap"
+			class="hgksoft.acquy.admin.actions.nguoidung.DangNhapActionSupport">
+			<result name="input">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+			<result name="quantri">./WEB-INF/jsp/admin/TrangChuQuanTri.jsp</result>
+			<result name="fail">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="DangXuat"
+			class="hgksoft.acquy.admin.actions.nguoidung.DangXuatActionSupport">
+			<result name="success">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="TaoMoiNguoiDung"
+			class="hgksoft.acquy.admin.actions.nguoidung.TaoMoiNguoiDungActionSupport">
+			<result name="input">./WEB-INF/jsp/admin/nguoidung/TaoMoiNguoiDung.jsp
+			</result>
+			<result name="success">./WEB-INF/jsp/admin/nguoidung/TaoMoiNguoiDung.jsp
+			</result>
+			<result name="fail">./WEB-INF/jsp/admin/nguoidung/TaoMoiNguoiDung.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="XoaNguoiDung"
+			class="hgksoft.acquy.admin.actions.nguoidung.XoaNguoiDungActionSupport">
+			<result name="input">./WEB-INF/jsp/admin/nguoidung/QuanLyNguoiDung.jsp
+			</result>
+			<result name="success">./WEB-INF/jsp/admin/nguoidung/QuanLyNguoiDung.jsp
+			</result>
+			<result name="fail">./WEB-INF/jsp/admin/nguoidung/QuanLyNguoiDung.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="CapNhatNguoiDung"
+			class="hgksoft.acquy.admin.actions.nguoidung.CapNhatNguoiDungActionSupport">
+			<result name="input">./WEB-INF/jsp/admin/nguoidung/CapNhatNguoiDung.jsp
+			</result>
+			<result name="success">./WEB-INF/jsp/admin/nguoidung/CapNhatNguoiDung.jsp
+			</result>
+			<result name="fail">./WEB-INF/jsp/admin/nguoidung/CapNhatNguoiDung.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="TimKiemNguoiDung"
+			class="hgksoft.acquy.admin.actions.nguoidung.TimKiemNguoiDungActionSupport">
+			<result name="success">./WEB-INF/jsp/admin/nguoidung/TimKiemNguoiDung.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="QuanLyNguoiDung"
+			class="hgksoft.acquy.admin.actions.nguoidung.QuanLyNguoiDungActionSupport">
+			<result name="success">./WEB-INF/jsp/admin/nguoidung/QuanLyNguoiDung.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+
+		<action name="GoTaoMoiNguoiDung"
+			class="hgksoft.acquy.admin.actions.nguoidung.GoTaoMoiNguoiDungActionSupport">
+			<result name="success">./WEB-INF/jsp/admin/nguoidung/TaoMoiNguoiDung.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="GoCapNhatNguoiDung"
+			class="hgksoft.acquy.admin.actions.nguoidung.GoCapNhatNguoiDungActionSupport">
+			<result name="success">./WEB-INF/jsp/admin/nguoidung/CapNhatNguoiDung.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<!-- END OF QUANTRI & NGUOIDUNG -->
+
+		<!-- SANPHAM -->
+		<action name="TimKiemSanPham"
+			class="hgksoft.acquy.admin.actions.sanpham.TimKiemSanPhamActionSupport">
+			<result name="input">./WEB-INF/jsp/admin/sanpham/TimKiemSanPham.jsp
+			</result>
+			<result name="success">./WEB-INF/jsp/admin/sanpham/TimKiemSanPham.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="LocSanPham"
+			class="hgksoft.acquy.admin.actions.sanpham.LocSanPhamActionSupport">
+			<result name="success">./WEB-INF/jsp/admin/sanpham/DanhSachSanPham.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="TaoMoiSanPham"
+			class="hgksoft.acquy.admin.actions.sanpham.TaoMoiSanPhamActionSupport">
+			<result name="input">./WEB-INF/jsp/admin/sanpham/TaoMoiSanPham.jsp
+			</result>
+			<result name="success">./WEB-INF/jsp/admin/sanpham/TaoMoiSanPham.jsp
+			</result>
+			<result name="fail">./WEB-INF/jsp/admin/sanpham/TaoMoiSanPham.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="XoaSanPham"
+			class="hgksoft.acquy.admin.actions.sanpham.XoaSanPhamActionSupport">
+			<result name="input">./WEB-INF/jsp/admin/sanpham/DanhSachSanPham.jsp
+			</result>
+			<result name="success">./WEB-INF/jsp/admin/sanpham/DanhSachSanPham.jsp
+			</result>
+			<result name="fail">./WEB-INF/jsp/admin/sanpham/DanhSachSanPham.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="CapNhatSanPham"
+			class="hgksoft.acquy.admin.actions.sanpham.CapNhatSanPhamActionSupport">
+			<result name="input">./WEB-INF/jsp/admin/sanpham/CapNhatSanPham.jsp
+			</result>
+			<result name="success">./WEB-INF/jsp/admin/sanpham/CapNhatSanPham.jsp
+			</result>
+			<result name="fail">./WEB-INF/jsp/admin/sanpham/CapNhatSanPham.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+
+		<action name="GoTaoMoiSanPham"
+			class="hgksoft.acquy.admin.actions.sanpham.GoTaoMoiSanPhamActionSupport">
+			<result name="success">./WEB-INF/jsp/admin/sanpham/TaoMoiSanPham.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="GoCapNhatSanPham"
+			class="hgksoft.acquy.admin.actions.sanpham.GoCapNhatSanPhamActionSupport">
+			<result name="success">./WEB-INF/jsp/admin/sanpham/CapNhatSanPham.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<!-- END OF SANPHAM -->
+
+		<!-- NHACC -->
+		<action name="TaoMoiNhaCC"
+			class="hgksoft.acquy.admin.actions.nhacc.TaoMoiNhaCCActionSupport">
+			<result name="input">./WEB-INF/jsp/admin/nhacc/TaoMoiNhaCC.jsp
+			</result>
+			<result name="success">./WEB-INF/jsp/admin/nhacc/TaoMoiNhaCC.jsp
+			</result>
+			<result name="fail">./WEB-INF/jsp/admin/nhacc/TaoMoiNhaCC.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="XoaNhaCC"
+			class="hgksoft.acquy.admin.actions.nhacc.XoaNhaCCActionSupport">
+			<result name="input">./WEB-INF/jsp/admin/nhacc/QuanLyNhaCC.jsp
+			</result>
+			<result name="success">./WEB-INF/jsp/admin/nhacc/QuanLyNhaCC.jsp
+			</result>
+			<result name="fail">./WEB-INF/jsp/admin/nhacc/QuanLyNhaCC.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="CapNhatNhaCC"
+			class="hgksoft.acquy.admin.actions.nhacc.CapNhatNhaCCActionSupport">
+			<result name="input">./WEB-INF/jsp/admin/nhacc/CapNhatNhaCC.jsp
+			</result>
+			<result name="success">./WEB-INF/jsp/admin/nhacc/CapNhatNhaCC.jsp
+			</result>
+			<result name="fail">./WEB-INF/jsp/admin/nhacc/CapNhatNhaCC.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="TimKiemNhaCC"
+			class="hgksoft.acquy.admin.actions.nhacc.TimKiemNhaCCActionSupport">
+			<result name="success">./WEB-INF/jsp/admin/nhacc/TimKiemNhaCC.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="QuanLyNhaCC"
+			class="hgksoft.acquy.admin.actions.nhacc.QuanLyNhaCCActionSupport">
+			<result name="success">./WEB-INF/jsp/admin/nhacc/QuanLyNhaCC.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+
+		<action name="GoQuanLyNhaCC"
+			class="hgksoft.acquy.admin.actions.nhacc.GoQuanLyNhaCCActionSupport">
+			<result name="success">./WEB-INF/jsp/admin/nhacc/QuanLyNhaCC.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="GoTaoMoiNhaCC"
+			class="hgksoft.acquy.admin.actions.nhacc.GoTaoMoiNhaCCActionSupport">
+			<result name="success">./WEB-INF/jsp/admin/nhacc/TaoMoiNhaCC.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="GoCapNhatNhaCC"
+			class="hgksoft.acquy.admin.actions.nhacc.GoCapNhatNhaCCActionSupport">
+			<result name="success">./WEB-INF/jsp/admin/nhacc/CapNhatNhaCC.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<!-- END OF NHACC -->
+
+		<!-- HANGXE -->
+		<action name="QuanLyHangXe"
+			class="hgksoft.acquy.admin.actions.hangxe.QuanLyHangXeActionSupport">
+			<result name="success">./WEB-INF/jsp/admin/hangxe/QuanLyHangXe.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="TaoMoiHangXe"
+			class="hgksoft.acquy.admin.actions.hangxe.TaoMoiHangXeActionSupport">
+			<result name="input">./WEB-INF/jsp/admin/hangxe/TaoMoiHangXe.jsp
+			</result>
+			<result name="success">./WEB-INF/jsp/admin/hangxe/TaoMoiHangXe.jsp
+			</result>
+			<result name="fail">./WEB-INF/jsp/admin/hangxe/TaoMoiHangXe.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="XoaHangXe"
+			class="hgksoft.acquy.admin.actions.hangxe.XoaHangXeActionSupport">
+			<result name="input">./WEB-INF/jsp/admin/hangxe/QuanLyHangXe.jsp
+			</result>
+			<result name="success">./WEB-INF/jsp/admin/hangxe/QuanLyHangXe.jsp
+			</result>
+			<result name="fail">./WEB-INF/jsp/admin/hangxe/QuanLyHangXe.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="CapNhatHangXe"
+			class="hgksoft.acquy.admin.actions.hangxe.CapNhatHangXeActionSupport">
+			<result name="input">./WEB-INF/jsp/admin/hangxe/CapNhatHangXe.jsp
+			</result>
+			<result name="success">./WEB-INF/jsp/admin/hangxe/CapNhatHangXe.jsp
+			</result>
+			<result name="fail">./WEB-INF/jsp/admin/hangxe/CapNhatHangXe.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+
+		<action name="GoQuanLyHangXe"
+			class="hgksoft.acquy.admin.actions.hangxe.GoQuanLyHangXeActionSupport">
+			<result name="success">./WEB-INF/jsp/admin/hangxe/QuanLyHangXe.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="GoTaoMoiHangXe"
+			class="hgksoft.acquy.admin.actions.hangxe.GoTaoMoiHangXeActionSupport">
+			<result name="success">./WEB-INF/jsp/admin/hangxe/TaoMoiHangXe.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="GoCapNhatHangXe"
+			class="hgksoft.acquy.admin.actions.hangxe.GoCapNhatHangXeActionSupport">
+			<result name="success">./WEB-INF/jsp/admin/hangxe/CapNhatHangXe.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<!-- END OF HANGXE -->
+
+		<!-- LOAIXE -->
+		<action name="QuanLyLoaiXe"
+			class="hgksoft.acquy.admin.actions.loaixe.QuanLyLoaiXeActionSupport">
+			<result name="success">./WEB-INF/jsp/admin/loaixe/QuanLyLoaiXe.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="TaoMoiLoaiXe"
+			class="hgksoft.acquy.admin.actions.loaixe.TaoMoiLoaiXeActionSupport">
+			<result name="input">./WEB-INF/jsp/admin/loaixe/TaoMoiLoaiXe.jsp
+			</result>
+			<result name="success">./WEB-INF/jsp/admin/loaixe/TaoMoiLoaiXe.jsp
+			</result>
+			<result name="fail">./WEB-INF/jsp/admin/loaixe/TaoMoiLoaiXe.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="XoaLoaiXe"
+			class="hgksoft.acquy.admin.actions.loaixe.XoaLoaiXeActionSupport">
+			<result name="input">./WEB-INF/jsp/admin/loaixe/QuanLyLoaiXe.jsp
+			</result>
+			<result name="success">./WEB-INF/jsp/admin/loaixe/QuanLyLoaiXe.jsp
+			</result>
+			<result name="fail">./WEB-INF/jsp/admin/loaixe/QuanLyLoaiXe.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="CapNhatLoaiXe"
+			class="hgksoft.acquy.admin.actions.loaixe.CapNhatLoaiXeActionSupport">
+			<result name="input">./WEB-INF/jsp/admin/loaixe/CapNhatLoaiXe.jsp
+			</result>
+			<result name="success">./WEB-INF/jsp/admin/loaixe/CapNhatLoaiXe.jsp
+			</result>
+			<result name="fail">./WEB-INF/jsp/admin/loaixe/CapNhatLoaiXe.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+
+		<action name="GoTaoMoiLoaiXe"
+			class="hgksoft.acquy.admin.actions.loaixe.GoTaoMoiLoaiXeActionSupport">
+			<result name="success">./WEB-INF/jsp/admin/loaixe/TaoMoiLoaiXe.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="GoCapNhatLoaiXe"
+			class="hgksoft.acquy.admin.actions.loaixe.GoCapNhatLoaiXeActionSupport">
+			<result name="success">./WEB-INF/jsp/admin/loaixe/CapNhatLoaiXe.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<!-- END OF LOAIXE -->
+
+		<!-- DONGXE -->
+		<action name="QuanLyDongXe"
+			class="hgksoft.acquy.admin.actions.dongxe.QuanLyDongXeActionSupport">
+			<result name="success">./WEB-INF/jsp/admin/dongxe/QuanLyDongXe.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="TaoMoiDongXe"
+			class="hgksoft.acquy.admin.actions.dongxe.TaoMoiDongXeActionSupport">
+			<result name="input">./WEB-INF/jsp/admin/dongxe/TaoMoiDongXe.jsp
+			</result>
+			<result name="success">./WEB-INF/jsp/admin/dongxe/TaoMoiDongXe.jsp
+			</result>
+			<result name="error">./WEB-INF/jsp/admin/dongxe/TaoMoiDongXe.jsp
+			</result>
+			<result name="fail">./WEB-INF/jsp/admin/dongxe/TaoMoiDongXe.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="XoaDongXe"
+			class="hgksoft.acquy.admin.actions.dongxe.XoaDongXeActionSupport">
+			<result name="input">./WEB-INF/jsp/admin/dongxe/QuanLyDongXe.jsp
+			</result>
+			<result name="success">./WEB-INF/jsp/admin/dongxe/QuanLyDongXe.jsp
+			</result>
+			<result name="fail">./WEB-INF/jsp/admin/dongxe/QuanLyDongXe.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="CapNhatDongXe"
+			class="hgksoft.acquy.admin.actions.dongxe.CapNhatDongXeActionSupport">
+			<result name="input">./WEB-INF/jsp/admin/dongxe/CapNhatDongXe.jsp
+			</result>
+			<result name="success">./WEB-INF/jsp/admin/dongxe/CapNhatDongXe.jsp
+			</result>
+			<result name="fail">./WEB-INF/jsp/admin/dongxe/CapNhatDongXe.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="GoTaoMoiDongXe"
+			class="hgksoft.acquy.admin.actions.dongxe.GoTaoMoiDongXeActionSupport">
+			<result name="success">./WEB-INF/jsp/admin/dongxe/TaoMoiDongXe.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="GoCapNhatDongXe"
+			class="hgksoft.acquy.admin.actions.dongxe.GoCapNhatDongXeActionSupport">
+			<result name="success">./WEB-INF/jsp/admin/dongxe/CapNhatDongXe.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<!-- END OF DONGXE -->
+
+		<!-- BEGIN OF TUONGTHICH -->
+		<action name="TaoMoiApDung"
+			class="hgksoft.acquy.admin.actions.apdung.TaoMoiApDungActionSupport">
+			<result name="input">./WEB-INF/jsp/admin/apdung/TaoMoiApDung.jsp
+			</result>
+			<result name="success">./WEB-INF/jsp/admin/apdung/XemApDung.jsp</result>
+			<result name="fail">./WEB-INF/jsp/admin/apdung/TaoMoiApDung.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="XoaApDung"
+			class="hgksoft.acquy.admin.actions.apdung.XoaApDungActionSupport">
+			<result name="input">./WEB-INF/jsp/admin/apdung/QuanLyApDung.jsp
+			</result>
+			<result name="success">./WEB-INF/jsp/admin/apdung/QuanLyApDung.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="XoaApDungSanPham"
+			class="hgksoft.acquy.admin.actions.apdung.XoaApDungSanPhamActionSupport">
+			<result name="input">./WEB-INF/jsp/admin/apdung/XemApDung.jsp</result>
+			<result name="success">./WEB-INF/jsp/admin/apdung/XemApDung.jsp</result>
+			<result name="fail">./WEB-INF/jsp/admin/apdung/XemApDung.jsp</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="TimKiemApDung"
+			class="hgksoft.acquy.admin.actions.apdung.TimKiemApDungActionSupport">
+			<result name="input">./WEB-INF/jsp/admin/apdung/TimKiemApDung.jsp
+			</result>
+			<result name="success">./WEB-INF/jsp/admin/apdung/TimKiemApDung.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="QuanLyApDung"
+			class="hgksoft.acquy.admin.actions.apdung.QuanLyApDungActionSupport">
+			<result name="input">./WEB-INF/jsp/admin/apdung/QuanLyApDung.jsp
+			</result>
+			<result name="success">./WEB-INF/jsp/admin/apdung/QuanLyApDung.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="HienThiSanPham"
+			class="hgksoft.acquy.admin.actions.apdung.HienThiSanPhamActionSupport">
+			<result name="input">./WEB-INF/jsp/admin/apdung/QuanLyApDung.jsp
+			</result>
+			<result name="success">./WEB-INF/jsp/admin/apdung/QuanLyApDung.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="XemApDung"
+			class="hgksoft.acquy.admin.actions.apdung.XemApDungActionSupport">
+			<result name="input">./WEB-INF/jsp/admin/apdung/QuanLyApDung.jsp
+			</result>
+			<result name="success">./WEB-INF/jsp/admin/apdung/XemApDung.jsp</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<action name="GoTaoMoiApDung"
+			class="hgksoft.acquy.admin.actions.apdung.GoTaoMoiApDungActionSupport">
+			<result name="success">./WEB-INF/jsp/admin/apdung/TaoMoiApDung.jsp
+			</result>
+			<result name="logout">./WEB-INF/jsp/admin/DangNhapQuanTri.jsp</result>
+		</action>
+		<!-- END OF TUONGTHICH -->
+
+		<!-- USER -->
+		<action name="XemApDungDongXe"
+			class="hgksoft.acquy.user.actions.XemApDungDongXeActionSupport">
+			<result name="success">./WEB-INF/jsp/user/ApDungDongXe.jsp</result>
+		</action>
+		<action name="XemDanhMucSanPham"
+			class="hgksoft.acquy.user.actions.XemDanhMucSanPhamActionSupport">
+			<result name="success">./WEB-INF/jsp/user/DanhMucSanPham.jsp</result>
+		</action>
+		<action name="XemChiTietSanPham"
+			class="hgksoft.acquy.user.actions.XemChiTietSanPhamActionSupport">
+			<result name="success">./WEB-INF/jsp/user/ChiTietSanPham.jsp</result>
+		</action>
+		<action name="LietKeDongXe"
+			class="hgksoft.acquy.user.actions.LietKeDongXeActionSupport">
+		</action>
+		<action name="GoGioiThieu"
+			class="hgksoft.acquy.user.actions.GoGioiThieuActionSupport">
+			<result name="success">./WEB-INF/jsp/user/GioiThieu.jsp</result>
+		</action>
+		<action name="GoIndex" class="hgksoft.acquy.user.actions.GoIndexActionSupport">
+			<result name="success">./WEB-INF/jsp/user/TrangChu.jsp</result>
+		</action>
+		<action name="LietKeSanPham"
+			class="hgksoft.acquy.user.actions.LietKeSanPhamActionSupport">
+			<result name="success">./WEB-INF/jsp/user/LietKeSanPham.jsp</result>
+		</action>
+		<action name="ChuyenMucAcQuy"
+			class="hgksoft.acquy.user.actions.ChuyenMucAcQuyActionSupport">
+			<result name="success">./WEB-INF/jsp/user/ChuyenMucAcQuy.jsp</result>
+		</action>
+	</package>
+</struts>
+   

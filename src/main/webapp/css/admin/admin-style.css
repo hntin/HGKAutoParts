@@ -1,0 +1,179 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.clr {
+    clear: both;
+}
+
+img{
+    border:0;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: smaller;
+    background: white;
+}
+
+#website {
+    width: 1000px;
+    margin: auto;
+    background: white;
+}
+
+#top-admin{
+    width: 980px;
+    margin: 10px auto;
+    height: 40px;
+    background: url(../../images/admin/bg-top-login.jpg) repeat-x;
+    font-weight: bold;
+    color: white;
+}
+
+#top-left-admin {
+    width: 330px;
+    height: 35px;
+    float: left;
+    padding-top: 8px;
+}
+
+#top-center-admin {
+    width: 300px;
+    height: 35px;
+    float: left;
+    padding-top: 8px;
+    text-align: center;
+}
+
+#top-right-admin {
+    width: 280px;
+    height: 35px;
+    float: right;
+    text-align: center;
+    padding-top: 8px;
+}
+
+#menu {
+    width: 980px;    
+    margin: 50px auto;
+    background-color: forestgreen;    
+    height: 40px;
+    font-style: normal;    
+    line-height: 40px;
+}
+
+#menu ul {
+    list-style-type: none; /* Bỏ dấu chấm tròn không cần thiết trong thẻ ul */
+    padding: 0px;
+}
+
+#menu ul li {
+    float: left; /* Để các menu chính nằm NGANG trên thanh menu */
+    width: 120px;
+    border-left: 1px solid activecaption;
+    position: relative; /* Cố định li mà chúng ta hover */
+    text-align: center;
+}
+
+#menu ul li a {
+    color: white;
+    font-weight: bold;
+}
+
+#menu ul li a:hover {
+    font-weight: bold;
+    color: crimson;
+}
+
+.menu-sub {
+    display: none; /* Ẩn menu con */
+    position: absolute; z-index: 90; /* Cho submenu hiện lên trên TẤT CẢ các div */
+    background: #4CAF50;       
+}
+
+.menu-sub li {
+    border-bottom: 1px solid activeborder;
+    border-right: 1px solid activeborder;
+}
+
+#menu li:hover .menu-sub{
+    display: block; /* Hiện menu con khi hover*/
+}
+
+#content-admin {
+    width: 980px;
+    height: 800px;
+    margin: auto;
+    border: 1px solid whitesmoke;
+}
+
+.page-caption {
+    margin-top: 50px;
+    text-transform: uppercase;
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+h1{
+    font-family: sans-serif;
+    font-size: 20px;
+    color: forestgreen;
+}
+
+h2{
+    font-family: sans-serif;
+    font-size: 16px;
+    color: green;
+}
+
+h3{
+    font-family: sans-serif;
+    font-size: 12px;
+    color: crimson;
+}
+
+.table1 {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr:nth-of-type(odd) { 
+    background: white; 
+}
+
+tr:nth-child(even){
+    background-color: white;
+}
+
+th { 
+    background: whitesmoke; 
+    color: #226699; 
+    font-weight: bold; 
+    text-align: center;
+}
+td, th { 
+    padding: 6px; 
+    border: 1px solid #ccc; 
+}
+
+.table1 tr:hover {
+    background-color: lightblue;
+}
+
+.errorMessage {
+    color:red;
+    font-size: 12px;
+}
+
